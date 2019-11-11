@@ -1,0 +1,18 @@
+﻿@model InternetShop.Models.Product
+<p>
+    <h3 class="text-success">Новый продукт</h3>
+</p>
+
+<Form  method="post" action="/Home/AddProduct">
+    <div class="form-group">
+        <label for="nameId" class="text-primary">Наименование</label>
+        <input class="form-control" name="Name" id="nameId" aria-describedby="nameHelp">
+        <small id="nameHelp" class="form-text text-muted">Введите наименование продукта</small>
+    </div>
+    <div class="form-group">
+        <label for="priceId" class="text-primary">Стоимость</label>
+        <input class="form-control" name="Price" id="priceId" aria-describedby="priceHelp">
+        <small id="priceHelp" class="form-text text-muted">Введите стоимость продукта</small>
+    </div>
+    <button class="btn-primary btn-lg" type="submit">Добавить</button>
+</Form>
